@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --secred:#f44336;
+    --black:#130f40;
+    --basecolor:white;
+    --shadow:rgba(4,9,30,0.7);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left:0; right:0;
+    padding:0rem 9%;
+    z-index: 1000;
+   
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header .navbar {
+    flex: 1;
+    text-align: right;
+}
+
+.header .navbar a{
+    list-style: none;
+    display: inline-block;
+
+    position: relative;
+}
+
+.header .navbar a{
+    color: var(--basecolor);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.header .navbar a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--secred);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.header .navbar a:hover::after{
+    width: 100%;
+}
+
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(var(--shadow),var(--shadow)),url(traveling-changes-your-life.jpeg);
+    
+}
+
+.home h3{
+    color:var(--basecolor);
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.home img{
+    width:100%;
+    margin:1rem 0;
+}
+
+
+#map{
+    width: 95%;
+     height: 413px;
+     border: 1px solid var(--basecolor);
+     padding: 100px;
+     margin : 0 30px 0 30px;
+   
+}
+
+input{
+    width: 80%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 5px;
+   background: var(--basecolor);
+   border-radius: 5px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background: rgba(255, 255, 255, 0);
+    color:var(--basecolor);
+    border: 1px solid var(--basecolor);
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.btn:hover{
+    background:var(--secred);
+    color:var(--basecolor);
+    border: 1px solid var(--secred);
+}
+

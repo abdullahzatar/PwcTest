@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header">
+      
+      <a href="#"><img src="image/folded-paper (1).png" style="height: 70px; margin-top: 10px"/></a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#services">services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contactus">Contact Us</a>
+      </nav>
+
+      <div>
+        <button class="btn">Call Us Now</button>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <h3 class="home-parallax">Find Any Location</h3>
+
+      <div id="login-btn">
+        <input type="Text" name="text" id="textmap" required placeholder="Enter The Location"/>
+        <button class="btn" style="width: 180px" onclick="searchmap()">Search</button>
+      </div>
+
+      <div>
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
